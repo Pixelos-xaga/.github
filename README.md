@@ -121,7 +121,3 @@ Individual repositories contain their specific license information.
 - Your warranty is now void (if it wasn't already)
 
 ---
-
-**Made with ❤️ by the PixelOS-xaga team**
-
-*Bringing Pixel experience to MediaTek devices*
