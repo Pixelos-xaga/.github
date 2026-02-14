@@ -42,19 +42,7 @@ Our organization contains several key repositories:
 
 ### Prerequisites
 - Unlocked bootloader
-- Custom recovery (TWRP/OrangeFox recommended)
-- Latest firmware for your device
 - Backup of your data
-
-### Basic Installation Steps
-1. Download the latest ROM from [Releases](https://github.com/Pixelos-xaga/pixelos-releases)
-2. Boot into recovery mode
-3. Wipe Data, Cache, and Dalvik Cache
-4. Flash the ROM zip file
-5. (Optional) Flash GApps or MindTheGapps if needed
-6. Reboot and enjoy!
-
-> **Note:** Detailed installation instructions are available in the releases section.
 
 ## Building from Source
 
@@ -67,28 +55,6 @@ sudo apt-get install bc bison build-essential ccache curl flex \
     libncurses5 libncurses5-dev libsdl1.2-dev libssl-dev libxml2 \
     libxml2-utils lzop pngcrush rsync schedtool squashfs-tools \
     xsltproc zip zlib1g-dev openjdk-11-jdk python-is-python3
-```
-
-### Syncing the Source
-```bash
-# Initialize repo
-mkdir ~/pixelos && cd ~/pixelos
-repo init -u https://github.com/Pixelos-xaga/PIXELOS16.git -b main
-
-# Sync the repositories
-repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
-```
-
-### Building
-```bash
-# Set up environment
-. build/envsetup.sh
-
-# Choose your device
-lunch aosp_xaga-userdebug
-
-# Start building
-mka bacon -j$(nproc --all)
 ```
 
 ## Features
@@ -131,15 +97,12 @@ We welcome contributions! Here's how you can help:
 
 ## Support & Community
 
-- **Telegram Group**: [Join our community](https://t.me/pixelos_xaga) *(if available)*
 - **Issues**: Report bugs via GitHub Issues
-- **XDA Thread**: Check XDA Developers forum *(if available)*
 
 ## Credits & Thanks
 
 - **PixelOS Team** - For the amazing ROM base
 - **LineageOS Team** - For device tree references and inspiration
-- **ArrowOS Team** - For MediaTek support and contributions
 - **All Contributors** - For their time and effort
 
 ## License
